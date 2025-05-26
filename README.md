@@ -26,8 +26,9 @@ Then edit `~/.config/plasma-localerc`; match its contents with the one here
 
 KDE (or Qt or perl5) is very weird in that it kinda ignores the system's
 locales. It has its own locales, some that don't exist (like `en_150`, `en_AT`,
-`en_SE`, etc.) outside of KDE. I live in Austria so for some stuff I set
-`en_AT`. `en_SE` uses ISO 8601 for date and time, so I wanna use that.
+`en_SE`, etc.) outside of KDE (something seems to be in
+`/usr/share/perl5/DateTime/Locale/` though?). I live in Austria so for some stuff
+I set `en_AT`. `en_SE` uses ISO 8601 for date and time, so I wanna use that.
 
 ```bash
 sudo cp copy_en_150 /usr/share/i18n/locales/en_AT
