@@ -1,0 +1,50 @@
+comment_char        %
+escape_char         /
+
+LC_IDENTIFICATION
+copy "en_150"
+END LC_IDENTIFICATION
+
+LC_CTYPE
+copy "en_150"
+END LC_CTYPE
+
+LC_COLLATE
+copy "en_150"
+END LC_COLLATE
+
+LC_MESSAGES
+copy "en_150"
+END LC_MESSAGES
+
+LC_MONETARY
+copy "en_150"
+END LC_MONETARY
+
+LC_NUMERIC
+copy "en_150"
+END LC_NUMERIC
+
+LC_TIME
+copy "en_150"
+END LC_TIME
+
+LC_ADDRESS
+copy "en_150"
+END LC_ADDRESS
+
+LC_MEASUREMENT
+copy "en_150"
+END LC_MEASUREMENT
+
+LC_NAME
+copy "en_150"
+END LC_NAME
+
+LC_PAPER
+copy "en_150"
+END LC_PAPER
+
+LC_TELEPHONE
+copy "en_150"
+END LC_TELEPHONE
