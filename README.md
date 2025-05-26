@@ -7,28 +7,32 @@ Should go in `/usr/share/i18n/locales/.`
 
 # Linux English (Europe) Locale
 
-Based on `i18n`, `en_DK`, `de_LI`
+Based on `i18n`, `en_DK`, `de_LI`, `en_US`.
 
 I made this because there is no one locale that completely satisfies me.
 
 I prefer metric, Euro, ISO 8601, period (`.`) as the decimal symbol and
-apostrophe (`'`) for the thousands-separator
+apostrophe (`'`) for the thousands-separator.
 
 ## Installation (+ KDE Plasma Instructions)
 
-By the way, I'm using Debian
+By the way, I'm using Debian.
 
 ```bash
 sudo cp en_150 /usr/share/i18n/locales/
 ```
 
-Then edit `~/.config/plasma-localerc`; match its contents with the one here
+Then edit `~/.config/plasma-localerc`; match its contents with the one
+[here](./plasma-localerc).
 
 KDE (or Qt or perl5) is very weird in that it kinda ignores the system's
 locales. It has its own locales, some that don't exist (like `en_150`, `en_AT`,
 `en_SE`, etc.) outside of KDE (something seems to be in
 `/usr/share/perl5/DateTime/Locale/` though?). I live in Austria so for some stuff
 I set `en_AT`. `en_SE` uses ISO 8601 for date and time, so I wanna use that.
+
+`en_AT` and `en_SE` exist for KDE but not for perl or whatever, so to suppress
+those error/warning messages, make pseudo-locales:
 
 ```bash
 sudo cp copy_en_150 /usr/share/i18n/locales/en_AT
@@ -38,11 +42,13 @@ sudo cp copy_en_150 /usr/share/i18n/locales/en_AT
 sudo cp copy_en_150 /usr/share/i18n/locales/en_SE
 ```
 
+Now generate the locales:
+
 ```bash
 sudo locale-gen
 ```
 
-For me I see
+For me I see:
 
 ```bash
 talon@talon-acerswift3-debian:~/Documents/MyOwnLocale$ sudo locale-gen
