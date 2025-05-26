@@ -16,7 +16,7 @@ apostrophe (`'`) for the thousands-separator.
 
 ## Installation (+ KDE Plasma Instructions)
 
-By the way, I'm using Debian.
+By the way, I'm using Debian Sid.
 
 ```bash
 sudo cp en_150 /usr/share/i18n/locales/
