@@ -181,6 +181,8 @@ LC_ALL=
 
 <https://www.localeplanet.com/index.html>
 
+<https://metacpan.org/release/DROLSKY/DateTime-Locale-1.45/source/lib/DateTime/Locale>
+
 <https://community.kde.org/KDE_Core/KLocale>
 
 <https://forum.manjaro.org/t/kde-do-not-works-with-custom-locale/148440>
