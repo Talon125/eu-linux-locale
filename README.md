@@ -186,3 +186,9 @@ LC_ALL=
 <https://forum.manjaro.org/t/kde-do-not-works-with-custom-locale/148440>
 
 <https://discuss.kde.org/t/custom-regional-formats/20077/4>
+
+<https://forums.opensuse.org/t/kde-region-language-shows-options-that-dont-work/163591>
+
+<https://bugs.kde.org/show_bug.cgi?id=403580>
+
+<https://github.com/sddm/sddm/issues/1570>
