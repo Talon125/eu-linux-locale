@@ -113,6 +113,8 @@ en_SE.UTF-8 UTF-8
 sudo locale-gen
 ```
 
+You may need to run this again after a system upgrade.
+
 Your output may look something like this:
 
 ```bash
