@@ -113,7 +113,25 @@ en_SE.UTF-8 UTF-8
 sudo locale-gen
 ```
 
-You may need to run this again after a system upgrade.
+<!-- You may need to run this again after a system upgrade. -->
+As can be read in `/etc/locale.gen`…
+
+```locales.gen
+# This file lists locales that you wish to have built. You can find a list
+# of valid supported locales at /usr/share/i18n/SUPPORTED, and you can add
+# user defined locales to /usr/local/share/i18n/SUPPORTED. If you change
+# this file, you need to rerun locale-gen.
+```
+
+You should also make and edit `/usr/local/share/i18n/SUPPORTED` to contain
+the locale(s). E.g.:
+
+```bash
+talon@talon-framework-debian:~$ cat /usr/local/share/i18n/SUPPORTED 
+en_150.UTF-8 UTF-8
+en_AT.UTF-8 UTF-8
+en_SE.UTF-8 UTF-8
+```
 
 Your output may look something like this:
 
